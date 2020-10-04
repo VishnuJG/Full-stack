@@ -3,9 +3,7 @@ const connectDb = require('./config/db');
 const app = express();
 //connect database
 connectDb();
-
-//init middleware
-app.use(express.json({extended:false}));
+//
 
 app.get('/', (re1, res) => res.send('API running'));
 
